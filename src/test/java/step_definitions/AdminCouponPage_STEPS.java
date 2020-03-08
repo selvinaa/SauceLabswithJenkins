@@ -48,6 +48,7 @@ public class AdminCouponPage_STEPS {
         SeleniumUtils.sendKeys(adminCouponPage.codeInput_field,currentCoupons.get(0).getCouponCode());
         SeleniumUtils.click(adminCouponPage.submit_Btn);
         SeleniumUtils.waitForVisibilityOfElement(adminCouponPage.addNewCoupon_Btn);
+
     }
 
 
