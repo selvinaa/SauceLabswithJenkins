@@ -36,7 +36,8 @@ public class DBUtil {
 
     public static int rowsCount(String sql) throws SQLException {
         statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-        resultSet = statement.executeQuery(sql);// as paramenter form method
+        resultSet = statement.executeQuery(sql);
+        // as paramenter form method
         resultSet.last();
         return resultSet.getRow();
     }
